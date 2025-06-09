@@ -1,0 +1,16 @@
+SELECT tweet_id FROM Tweets WHERE CHAR_LENGTH(content) > 15;
+
+Input
+Tweets =
+| tweet_id | content                           |
+| -------- | --------------------------------- |
+| 1        | Let us Code                       |
+| 2        | More than fifteen chars are here! |
+Output
+| tweet_id |
+| -------- |
+| 2        |
+Expected
+| tweet_id |
+| -------- |
+| 2        |
